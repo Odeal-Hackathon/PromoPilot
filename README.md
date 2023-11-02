@@ -53,7 +53,8 @@ Set up your .env file:
 ```bash
 cd <project-directory>
 
-touch .env dosyasına ortam değişkenleri ekleyin.
+Add environment variables to the touch .env file.
+
 ```
 - Then, add the following environment variables into the .env file:
 
