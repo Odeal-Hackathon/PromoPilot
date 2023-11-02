@@ -56,7 +56,6 @@ cd <project-directory>
 
 Add environment variables to the touch .env file.
 
-```
 - Then, add the following environment variables into the .env file:
 
 ```bash
