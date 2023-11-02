@@ -8,10 +8,6 @@ This application was developed as part of the Ödeal GPT Hackathon. It's a gener
 
 ---
 
-## Step-By-Step Guide
-
-<!-- You may want to detail out the step-by-step guide here -->
-
 ## Technologies Used
 
 The main technologies utilized:
