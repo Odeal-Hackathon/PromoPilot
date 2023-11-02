@@ -52,6 +52,7 @@ Set up your .env file:
 
 ```bash
 cd <project-directory>
+```
 
 Add environment variables to the touch .env file.
 
