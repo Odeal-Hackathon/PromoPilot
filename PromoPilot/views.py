@@ -6,7 +6,7 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
-socketio = SocketIO(cors_allowed_origins="*")
+socketio = SocketIO(cors_allowed_origins="*", logger=True, engineio_logger=True)
 
 settings = Settings()
 chat_session = ChatSession()

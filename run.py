@@ -16,4 +16,4 @@ def create_app():
 
 if __name__ == '__main__':
     app_instance = create_app()
-    socketio.run(app_instance, port=5004, debug=True, allow_unsafe_werkzeug=True)
+    socketio.run(app_instance, port=5001, debug=True, allow_unsafe_werkzeug=True)
