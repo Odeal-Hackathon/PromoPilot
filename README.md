@@ -4,7 +4,7 @@ This application was developed as part of the Ödeal GPT Hackathon. It's a gener
 
 | Application Screenshot |
 |------------------------|
-| ![promopilotapp]()     |
+| ![image](https://github.com/Odeal-Hackathon/PromoPilot/assets/83168207/625191f9-c69c-449e-a3f8-ca7faa1eaaca)|
 
 ---
 
