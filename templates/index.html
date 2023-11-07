@@ -1,27 +1,21 @@
-{% extends "layout.html" %}
-{% block body %}
-
-<div id="card">
-    <h2 class="centered-title">PromoPilot | Gen-AI Chatbot</h2>
-    <div id="dropdown-container">
-    <!-- Dropdown menü -->
-    <select id="shop-dropdown" class="form-select">
-        <option value="m1">Müşteri 1</option>
-        <option value="m2">Müşteri 2</option>
-        <option value="genel">Genel</option>
+{% extends "layout.html" %} {% block body %} <div id="card">
+  <h2 class="centered-title">PromoPilot | Gen-AI Chatbot</h2>
+  <div id="dropdown-container">
+      <label for="shop-dropdown"></label><select id="shop-dropdown" class="form-select">
+        {% for id, marka in brands %}
+            <option value="{{ id }}">{{ marka }}</option>
+        {% endfor %} <option value="">Genel</option>
     </select>
-    </div>
-    <ul id="messages"></ul>
-    <div id="messageInput" class="input-group">
-        <input type="text" id="input" class="form-control" placeholder="Mesajınızı yazın..." aria-label="Mesajınızı yazın..." aria-describedby="sendButton">
-        <button id="sendButton" class="btn btn-primary rounded-circle" type="button">
-            <i class="fas fa-paper-plane"></i>
-        </button>
-    </div>
+  </div>
+  <ul id="messages"></ul>
+  <div id="messageInput" class="input-group">
+    <input type="text" id="input" class="form-control" placeholder="Mesajınızı yazın..." aria-label="Mesajınızı yazın..." aria-describedby="sendButton">
+    <button id="sendButton" class="btn btn-primary rounded-circle" type="button">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
 </div>
 <!-- JavaScripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
-<script src="../static/js/chat.js"></script>
-
-{% endblock %}
+<script src="../static/js/chat.js"></script> {% endblock %}
