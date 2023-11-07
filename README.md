@@ -4,13 +4,9 @@ This application was developed as part of the Ödeal GPT Hackathon. It's a gener
 
 | Application Screenshot |
 |------------------------|
-| ![promopilotapp]()     |
+| ![image](https://github.com/Odeal-Hackathon/PromoPilot/assets/83168207/625191f9-c69c-449e-a3f8-ca7faa1eaaca)|
 
 ---
-
-## Step-By-Step Guide
-
-<!-- You may want to detail out the step-by-step guide here -->
 
 ## Technologies Used
 
@@ -56,9 +52,10 @@ Set up your .env file:
 
 ```bash
 cd <project-directory>
-
-touch .env dosyasına ortam değişkenleri ekleyin.
 ```
+
+Add environment variables to the touch .env file.
+
 - Then, add the following environment variables into the .env file:
 
 ```bash
