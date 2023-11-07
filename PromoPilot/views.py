@@ -37,9 +37,11 @@ def index():
 def handle_user_message(data):
     print("Message received:", data['message'])
     print("Dropdown selection:", data['dropdownValue'])
+    message = data['message']
+    selection = data['dropdownValue']
     try:
-        #bot_response = manager.send_request(message)
-        bot_response = 'cevap'
+        bot_response = manager.send_request(message, selection)
+        #bot_response = 'cevap'
     except ConnectionError:
         bot_response = "Bir hata oluştu. Lütfen tekrar deneyin."
 

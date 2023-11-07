@@ -46,8 +46,8 @@ class RequestManager:
         self.headers['Authorization'] = f'Bearer {self.api_key}'
         self.session = session
 
-    def send_request(self, question):
-        data = self._prepare_data(question)
+    def send_request(self, question, id):
+        data = self._prepare_data(question, id)
         body = str.encode(json.dumps(data))
         req = urllib.request.Request(self.rest_endpoint, body, self.headers)
 
@@ -61,9 +61,10 @@ class RequestManager:
         except urllib.error.HTTPError as error:
             raise ConnectionError(f"Request failed with status code: {error.code}") from error
 
-    def _prepare_data(self, question):
+    def _prepare_data(self, question, market_id):
         data = {
             "chat_history": self.session.get_chat_history(),
-            "question": question
+            "question": question,
+            "market_id": market_id,
         }
         return data

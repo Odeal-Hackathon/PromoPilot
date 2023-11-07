@@ -68,7 +68,7 @@ SECRET_KEY=<asıri-gizli-bisi>
 
 - Building the Docker Image:
 ```bash
-docker build -t promopilot:latest
+docker build -t promopilot:latest .
 ```
 
 - Launching the Docker Container:
