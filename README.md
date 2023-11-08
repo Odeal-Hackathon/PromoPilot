@@ -1,12 +1,7 @@
 # PromoPilot - GEN AI CHATBOT
 
 This application was developed as part of the Ödeal GPT Hackathon. It's a generative AI-based chatbot designed to offer customers special campaigns and promotions.
-
-| Application Screenshot |
-|------------------------|
-| ![image](https://github.com/Odeal-Hackathon/PromoPilot/assets/83168207/625191f9-c69c-449e-a3f8-ca7faa1eaaca)|
-
----
+You send your message by choosing the member business ID or general category. A customized response is then returned.
 
 ## Technologies Used
 
