@@ -1,0 +1,21 @@
+version: '3.11'
+
+services:
+  db:
+    image: postgres:latest
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  web:
+    build: .
+    command: ["gunicorn", "-k", "eventlet", "-w", "1", "-b", "0.0.0.0:5001", "run:create_app()"]
+    volumes:
+      - .:/app
+    ports:
+      - "5001:5001"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+
+volumes:
+  postgres_data:

@@ -65,6 +65,6 @@ class RequestManager:
         data = {
             "chat_history": self.session.get_chat_history(),
             "question": question,
-            "market_id": market_id,
+            "customerId": market_id,
         }
         return data
