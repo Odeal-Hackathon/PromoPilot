@@ -57,6 +57,22 @@ Add environment variables to the touch .env file.
 API_KEY=<apikey>
 REST_ENDPOINT=<endpoint>
 SECRET_KEY=<asıri-gizli-bisi>
+
+DATABASE_URL=postgresql://postgres:postgres@localhost/postgres
+
+# Azure Cosmos DB
+COSMOS_DATABASE=db
+COSMOS_CONTAINER=container
+COSMOS_ENDPOINT=endpoint
+COSMOS_KEY=key
+
+# Azure Cognitive Search
+CS_API_BASE=cognitive-search.search.windows.net
+CS_API_KEY=key
+
+OPENAI_API_KEY=key
+AZURE_API_BASE=azure
+
 ```
 
 ### Server Settings
